@@ -15,9 +15,6 @@ body {
     background-color: rgba(0, 0, 0, 0.456);
 }
 
-.map {
-    /* background-image: url("https://tile.openweathermap.org/map/wind_new/0/0/0.png?appid=42b31b59da0b420b7b7480b236208b86"); */
-    /* width: 100%; */
+.map { 
     height: 500px;
-    /* background-color: rgba(0, 0, 0, 0.179); */
 }
