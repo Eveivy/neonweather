@@ -191,8 +191,10 @@ btnEl.addEventListener('click', () => {
             }).catch((err) => {
                 console.log(err)
             });
-    }
 
+            
+    }
+ 
 });
  
 
