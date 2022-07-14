@@ -5,44 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/99a4c2cf97bf033a558fcf3159ad308d.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Weather App</title>
 </head>
 
 <body>
-    <div class="container-fluid p-5 background">
+    <div class="container-fluid p-md-4 background">
         <div class="nav d-flex">
             <div class="py-2">
-            <img src="./image/99a4c2cf97bf033a558fcf3159ad308d.jpg" class="rounded-circle" width="100px" alt="">
+                <img src="./image/99a4c2cf97bf033a558fcf3159ad308d.jpg" class="rounded-circle" width="100px" alt="">
             </div>
-           <div class="mt-5">
-            <p class="display-5 text-white fw-bold">Neon<span class="fs-5">/weather</span></p>
-           </div>
-        </div>
-        <div class="row container p-4 align-items-center">
-            <div class="col-12 col-md-8 p-3">
-                <div id="openweathermap-widget-21"></div>
-            </div>
-            <div class="col-12 col-md-4 p-3">
-                <div id="openweathermap-widget-22"></div>
+            <div class="mt-5">
+                <p class="display-5 text-white fw-bold">Neon<span class="fs-5">/weather</span></p>
             </div>
         </div>
-        <div class="container m-auto w-50">
-            <div class="transparent-bg d-flex justify-content-end align-items-center p-4 shadow border-0 rounded">
-                <input type="text" placeholder="search city" class="form-control p-2 fs-5" id="input-el">
-                <button class="mx-3 btn btn-primary px-3 rounded border-0 py-2" id="btn-el">Search</button>
-            </div>
-            <div class="transparent-bg d-flex my-3 justify-content-end align-items-center shadow border-0 rounded">
-
+        
+        <div class="row container mt-md-5 mt-4 g-3">
+            <div class="col-12 col-md-7 container">
+                <div class="transparent-bg d-flex justify-content-end align-items-center p-4 shadow border-0 rounded">
+                    <input type="text" placeholder="search city" class="form-control p-2 fs-5 text-capitalize"
+                        id="input-el">
+                    <button class="mx-3 btn btn-primary px-3 rounded border-0 py-2 fs-5" id="btn-el">Search</button>
+                </div>
+                <div class="text-white my-3 shadow border-0 rounded transparent-bg p-2" id="searched-result"> </div>
             </div>
         </div>
     </div>
-    <!-- <div class="loader container-fluid py-4">
-    <div class="load container"></div>
-</div> -->
-    <!-- <script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
-    <script src="./js/app.js"></script> -->
+    <div class="map mt-1" id="map"></div>
+
+ 
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

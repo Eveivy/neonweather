@@ -1,11 +1,23 @@
-.background{
+body {
+    font-family: "Poppins";
+}
+
+.background {
     background-image: url("/image/anastasia-kozheko-normal.gif");
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-} 
-.transparent-bg{
+}
+
+.transparent-bg {
     background-color: rgba(0, 0, 0, 0.456);
+}
+
+.map {
+    /* background-image: url("https://tile.openweathermap.org/map/wind_new/0/0/0.png?appid=42b31b59da0b420b7b7480b236208b86"); */
+    /* width: 100%; */
+    height: 500px;
+    /* background-color: rgba(0, 0, 0, 0.179); */
 }
